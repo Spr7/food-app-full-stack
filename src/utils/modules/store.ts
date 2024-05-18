@@ -1,7 +1,7 @@
 import { StateCreator } from "zustand";
-import { createAppStore } from "../../utils/zustand/zustand";
-import { helperFunction } from "../../utils/shared/shared";
-import { FORM_STATE, USER_DETAILS } from "../../utils/constants/constants";
+import { createAppStore } from "../zustand/zustand";
+import { helperFunction } from "../shared/shared";
+import { FORM_STATE, USER_DETAILS } from "../constants/constants";
 
 const initialState: any = {
   [USER_DETAILS]: {
@@ -21,7 +21,7 @@ const SearchFormStore: StateCreator<any> = (set) => {
     ...initialState,
     // Initialize search form from session data
     shopStoreInitialization: () => {
-      const initialData = "helloo....";
+      const initialData = "hello....";
       set(() => ({ initialData }));
     },
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useSearchFormStore } from "../../modules/store";
+import { useSearchFormStore } from "../../../utils/modules/store";
 import {
   ADD_USER_DETAILS_URL,
   MAILID_EXISTS,

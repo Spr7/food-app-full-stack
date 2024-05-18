@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { useSearchFormStore } from "../../modules/store";
+import { useSearchFormStore } from "../../../utils/modules/store";
 import {
-  USER_DETAILS,
   LOGIN_USER_DETAILS_URL,
   USER_NOT_FOUND,
   FORM_STATE,

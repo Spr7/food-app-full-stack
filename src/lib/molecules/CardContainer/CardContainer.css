@@ -1,0 +1,30 @@
+.hotel-card-main {
+  column-count: 1;
+  column-gap: 24px;
+  @media (min-width: 768px) {
+    column-count: 2;
+  }
+  @media (min-width: 992px) {
+    column-count: 3;
+  }
+}
+
+.hotel-card-container {
+  max-width: 1140px;
+}
+
+.category-main {
+  overflow: scroll;
+}
+
+.category-el {
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  background-color: rgba(190, 221, 245, 0.486);
+}
+
+.category-all {
+  border-right: 1px solid black;
+}

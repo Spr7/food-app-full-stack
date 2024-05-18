@@ -1,7 +1,7 @@
-import React, { useCallback, useEffect, useState } from "react";
-import { useSearchFormStore } from "../../modules/store";
+import React, { useState } from "react";
+import { useSearchFormStore } from "../../../utils/modules/store";
 import "./index.css";
-import { SignupForm } from "../../atoms/SignUpForm/SignUpForm";
+import { HotelCardContainer } from "../CardContainer/CardContainer";
 
 export const HotelDetails = () => {
   const setFormState = useSearchFormStore((state: any) => state.setFormState);
@@ -9,8 +9,7 @@ export const HotelDetails = () => {
 
   return (
     <div className="pt-5">
-      {/* <SignupForm /> */}
-      Hotel Details Page .....!
+      <HotelCardContainer />
     </div>
   );
 };

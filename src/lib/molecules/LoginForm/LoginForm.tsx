@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SignInForm from "../../atoms/SIgnInForm/SignInForm";
 import SignupForm from "../../atoms/SignUpForm/SignUpForm";
-import { useSearchFormStore } from "../../modules/store";
+import { useSearchFormStore } from "../../../utils/modules/store";
 
 export const LogInForm = () => {
   //   const [formState, setFormState] = useState("SignUp");
