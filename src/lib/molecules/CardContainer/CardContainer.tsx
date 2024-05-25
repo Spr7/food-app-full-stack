@@ -27,7 +27,6 @@ export const HotelCardContainer = () => {
       }
     }
   };
-  console.log("********cat", categoryState);
 
   return (
     <div className="hotel-card-container m-auto">
@@ -40,8 +39,8 @@ export const HotelCardContainer = () => {
             All
           </button>
         </label>
-        {HotelCardData?.categories.map((data) => (
-          <label htmlFor={data}>
+        {HotelCardData?.categories.map((data, i) => (
+          <label htmlFor={data} key={i}>
             <button
               className="category-el mx-1"
               onClick={() => handleCategoryClick(data)}
@@ -53,10 +52,12 @@ export const HotelCardContainer = () => {
       </div>
       <div className="hotel-card-main m-auto">
         {categoryState.includes("all")
-          ? HotelCardData?.cards.map((data) => <HotelCard cardData={data} />)
+          ? HotelCardData?.cards.map((data, i) => (
+              <HotelCard cardData={data} key={i} />
+            ))
           : HotelCardData?.cards
               .filter((data) => categoryState.includes(data?.category))
-              .map((data) => <HotelCard cardData={data} />)}
+              .map((data, i) => <HotelCard cardData={data} key={i} />)}
       </div>
     </div>
   );

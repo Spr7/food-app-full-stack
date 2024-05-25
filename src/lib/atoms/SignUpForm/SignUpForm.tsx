@@ -8,7 +8,7 @@ import {
 import { signUpUser } from "../../../utils/loginUserUtils/login.utils";
 import { useNavigate } from "react-router-dom";
 
-export const SignupForm = () => {
+export const SignUpForm = () => {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -56,7 +56,7 @@ export const SignupForm = () => {
     <div className="container login-form">
       <div className="row justify-content-center">
         <div className="col-md-6 form-details">
-          <h2 className="py-3">Signup Form</h2>
+          <h2 className="py-3">SignUp Form</h2>
           {errorMessage && <p className="text-danger">{errorMessage}</p>}
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
@@ -119,4 +119,3 @@ export const SignupForm = () => {
     </div>
   );
 };
-export default SignupForm;
