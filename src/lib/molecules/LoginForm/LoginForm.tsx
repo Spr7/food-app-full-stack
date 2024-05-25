@@ -4,7 +4,6 @@ import { SignUpForm } from "../../atoms/SignUpForm/SignUpForm";
 import { useSearchFormStore } from "../../../utils/modules/store";
 
 export const LogInForm = () => {
-  //   const [formState, setFormState] = useState("SignUp");
   const formState = useSearchFormStore((state: any) => state.formState);
 
   return (
